@@ -4,15 +4,15 @@ import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
 
-const Pricing = () => {
+const Pricing2 = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Web Design Packages"
-          paragraph="We offer a range of web design packages to suit your needs and budget. Whether you need a simple landing page, a fully responsive website."
+          title="E-Commerce Application Packages"
+          paragraph="We offer a range of ecommerce web design packages to suit your business needs and budget. Whether you need a simple online store or a fully customized ecommerce solution, we have the expertise and experience to deliver."
           center
           width="665px"
         />
@@ -60,45 +60,71 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-4">
           <PricingBox
-            packageName="Lite"
-            price={isMonthly ? "2400" : "19900"}
+            packageName="Starter"
+            price={isMonthly ? "3900" : "49000"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Initial Payment LKR 7500"
+            subtitle="Initial Payment LKR 9000"
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Free Domain(1Y)" status="active" />
+            <OfferList text="Free Hosting(1Y)" status="active" />
+            <OfferList text="1 Category" status="active" />
+            <OfferList text="25 Products" status="inactive" />
+            <OfferList text="FB Page" status="inactive" />
+            <OfferList text="Instagram Account" status="inactive" />
           </PricingBox>
           <PricingBox
-            packageName="Basic"
-            price={isMonthly ? "4900" : "39900"}
-            duration={isMonthly ? "mo" : "yr"}
-            subtitle="Initial Payment LKR 11900"
-          >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
-          </PricingBox>
-          <PricingBox
-            packageName="Plus"
-            price={isMonthly ? "6900" : "59900"}
+            packageName="Pro &nbsp; &nbsp; &nbsp;"
+            price={isMonthly ? "5900" : "69000"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle="Initial Payment LKR 19000"
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+            <OfferList text="Payment Gateway" status="active" />
+            <OfferList text="Free Domain(1Y)" status="active" />
+            <OfferList text="Free Hosting(1Y)" status="active" />
+            <OfferList text="Email Gateway" status="active" />
+            <OfferList text="3 Categories" status="active" />
+            <OfferList text="60 Products" status="inactive" />
+            <OfferList text="Free Email" status="inactive" />
+            <OfferList text="FB Page" status="inactive" />
+            <OfferList text="Instagram Account" status="inactive" />
+          </PricingBox>
+          <PricingBox
+            packageName="Premium"
+            price={isMonthly ? "6900" : "89000"}
+            duration={isMonthly ? "mo" : "yr"}
+            subtitle="Initial Payment LKR 24900"
+          >
+            <OfferList text="Payment Gateway" status="active" />
+            <OfferList text="SMS Gateway" status="active" />
+            <OfferList text="Free Domain(1Y)" status="active" />
+            <OfferList text="Free Hosting(1Y)" status="active" />
+            <OfferList text="Email Gateway" status="active" />
+            <OfferList text="6 Categories" status="active" />
+            <OfferList text="150 Products" status="inactive" />
+            <OfferList text="Free Email" status="inactive" />
+            <OfferList text="FB Page" status="inactive" />
+            <OfferList text="Instagram Account" status="inactive" />
+            <OfferList text="SEO" status="inactive" />
+          </PricingBox>
+          <PricingBox
+            packageName="Ultimate"
+            price={isMonthly ? "8900" : "129000"}
+            duration={isMonthly ? "mo" : "yr"}
+            subtitle="Initial Payment LKR 39000"
+          >
+            <OfferList text="Payment Gateway" status="active" />
+            <OfferList text="SMS Gateway" status="active" />
+            <OfferList text="Free Domain(1Y)" status="active" />
+            <OfferList text="Free Hosting(1Y)" status="active" />
+            <OfferList text="Email Gateway" status="active" />
+            <OfferList text="10 Categories" status="active" />
+            <OfferList text="300 Products" status="inactive" />
+            <OfferList text="Free Email" status="inactive" />
+            <OfferList text="FB Page" status="inactive" />
+            <OfferList text="Instagram Account" status="inactive" />
+            <OfferList text="SEO" status="inactive" />
           </PricingBox>
         </div>
       </div>
@@ -161,4 +187,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Pricing2;
